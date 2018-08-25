@@ -1,20 +1,15 @@
-public class Employee implements Comparable<Employee> {
+public class Employee {
 	
-	private int in;
-	private int out;
+	private int timeIn;
+	private int timeOut;
 	public Employee(int in,int out) {
-		this.in = in;
-		this.out = out;
+		this.timeIn = in;
+		this.timeOut = out;
 	}
 	public int getIn() {
-		return in;
+		return timeIn;
 	}
 	public int getOut() {
-		return out;
-	}
-	@Override
-	public int compareTo(Employee o) {
-		// TODO Auto-generated method stub
-		return in - ((Employee)o).in;
+		return timeOut;
 	}
 }
